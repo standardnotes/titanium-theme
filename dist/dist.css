@@ -1,0 +1,317 @@
+:root {
+  --foreground-color: #3d3c40;
+  --background-color: rebeccapurple;
+  --highlight-color: #c9cccf;
+  --primary-tint-color: #d9dbde;
+  --high-contrast-bg-color: #d9dbde;
+  --border-color: var(--highlight-color);
+  --secondary-bg-color: var(--high-contrast-bg-color);
+  --tertiary-bg-color: var(--high-contrast-bg-color);
+  /* Tags */
+  --tags-text-color: var(--foreground-color);
+  --tags-bg-color: #d9dbde;
+  --tags-selected-bg-color: var(--highlight-color);
+  /* Notes */
+  --note-cell-text-color: var(--foreground-color);
+  --note-cell-selected-text-color: var(--foreground-color);
+  --notes-column-header-bg-color: #d9dbde;
+  --note-cell-selected-bg-color: var(--highlight-color);
+  --note-cell-border-color: var(--border-color);
+  --notes-column-left-border-color: var(--border-color);
+  --notes-column-right-border-color: var(--border-color);
+  --notes-column-inset-left-border-color: 0;
+  --notes-column-inset-right-border-color: 0;
+  /* Editor */
+  --editor-text-color: var(--foreground-color);
+  --editor-bg-color: var(--high-contrast-bg-color);
+  --editor-title-bar-bg-color: var(--primary-tint-color);
+  /* Footer */
+  --footer-bg-color: var(--high-contrast-bg-color);
+  --footer-link-color: var(--background-color);
+  --footer-bar-border-top-color: var(--border-color);
+  /* UI Components */
+  --ui-component-text-color: var(--foreground-color);
+  --ui-component-bg-color: var(--high-contrast-bg-color);
+  /* Column Menus */
+  --section-menu-bar-bg-color: var(--highlight-color);
+  --colomn-menu-text-color: var(--foreground-color);
+  --colomn-menu-bg-color: var(--highlight-color);
+  --colomn-menu-highlighted-bg-color: var(--background-color);
+  --menu-section-sep-color: var(--border-color);
+  --menu-item-sep-color: rgba(0, 0, 0, 0.1);
+  /* General */
+  --heading-text-color: var(--foreground-color);
+  --bar-bg-color: var(--background-color);
+  --link-color: var(--background-color);
+  --selection-color: var(--border-color);
+}
+
+/* General */
+::selection {
+  background: var(--selection-color) !important;
+  /* WebKit/Blink Browsers */
+  color: white;
+}
+
+::-moz-selection {
+  background: var(--link-color) !important;
+  /* Gecko Browsers */
+  color: white;
+}
+
+body {
+  color: var(--foreground-color) !important;
+}
+
+.app .section > .content {
+  background-color: var(--high-contrast-bg-color) !important;
+}
+
+.add-button {
+  background-color: var(--ui-component-bg-color) !important;
+  color: var(--ui-component-text-color) !important;
+}
+
+.app-bar {
+  background-color: var(--ui-component-bg-color) !important;
+}
+
+.blue {
+  /*legacy, replaced with .tinted */
+  color: var(--link-color) !important;
+}
+
+.tinted {
+  color: var(--link-color) !important;
+}
+
+.tinted-selected {
+  color: var(--link-color) !important;
+}
+
+/* Tags */
+.app .tags, .tags .content {
+  background-color: var(--tags-bg-color) !important;
+}
+
+#tags-title-bar {
+  color: var(--heading-text-color) !important;
+}
+
+.tags .tag {
+  color: var(--tags-text-color) !important;
+}
+
+.tags .tag a {
+  color: var(--link-color) !important;
+}
+
+.tags .tag > .info > .title {
+  color: var(--tags-text-color) !important;
+}
+
+.tags .tag.selected {
+  background-color: var(--tags-selected-bg-color) !important;
+}
+
+.tags .tag:hover:not(.selected) {
+  background-color: var(--tags-selected-bg-color) !important;
+}
+
+/* Notes */
+.app .notes .content {
+  background-color: var(--tertiary-bg-color) !important;
+}
+
+.notes {
+  border-left: 1px solid var(--notes-column-left-border-color) !important;
+  border-right: 1px solid var(--notes-column-right-border-color) !important;
+}
+
+#notes-title-bar {
+  color: var(--heading-text-color) !important;
+  background-color: var(--notes-column-header-bg-color) !important;
+}
+
+.notes .filter-section .filter-bar {
+  background-color: var(--ui-component-bg-color) !important;
+}
+
+.notes .note.selected {
+  background-color: var(--note-cell-selected-bg-color) !important;
+  color: var(--note-cell-selected-text-color) !important;
+}
+
+.notes .note {
+  border-bottom: 1px solid var(--note-cell-border-color) !important;
+  background-color: var(--tertiary-bg-color) !important;
+  color: var(--note-cell-text-color);
+}
+
+.notes .scrollable {
+  border-left: 1px solid var(--notes-column-inset-left-border-color) !important;
+  border-right: 1px solid var(--notes-column-inset-right-border-color) !important;
+}
+
+/* Editor */
+#editor-title-bar {
+  background-color: var(--editor-title-bar-bg-color) !important;
+}
+
+#editor-title-bar > .title > .input {
+  color: var(--heading-text-color) !important;
+}
+
+.editor-content {
+  background-color: var(--editor-bg-color) !important;
+}
+
+.editor-content .editable {
+  background-color: var(--editor-bg-color);
+  color: var(--editor-text-color);
+}
+
+#editor-title-bar .editor-tags .tags-input {
+  color: var(--heading-text-color) !important;
+}
+
+#editor-title-bar #save-status {
+  color: #8C8F91 !important;
+}
+
+/* Footer */
+#footer-bar {
+  border-top: 1px solid var(--footer-bar-border-top-color) !important;
+  background-color: var(--footer-bg-color) !important;
+}
+
+/* Editors */
+.CodeMirror {
+  background-color: var(--editor-bg-color) !important;
+  color: var(--editor-text-color) !important;
+  border: 0 !important;
+}
+
+.CodeMirror-cursor {
+  border-color: white;
+}
+
+.CodeMirror-selected {
+  background: var(--selection-color) !important;
+}
+
+.CodeMirror-gutters {
+  background-color: var(--high-contrast-bg-color) !important;
+  color: var(--editor-text-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+.CodeMirror .cm-header {
+  font-family: arial;
+  color: var(--editor-text-color) !important;
+}
+
+.CodeMirror .cm-variable-2 {
+  font-family: arial;
+  color: var(--link-color) !important;
+}
+
+.CodeMirror .cm-link, .cm-string, .cm-keyword {
+  font-family: arial;
+  color: var(--editor-text-color) !important;
+}
+
+.CodeMirror .CodeMirror-linenumber {
+  color: gray !important;
+}
+
+/* Code Editor bottom toolbar */
+#select-wrapper {
+  background-color: var(--high-contrast-bg-color) !important;
+  color: var(--editor-text-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Advanced Markdown top toolbar */
+.editor-toolbar {
+  background-color: var(--high-contrast-bg-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+.editor-toolbar::before, ::after {
+  background: 0 !important;
+}
+
+.editor-toolbar a {
+  color: var(--editor-text-color) !important;
+}
+
+/* Simple Markdown Editor */
+#simple-markdown {
+  background-color: var(--editor-bg-color) !important;
+  color: var(--editor-text-color) !important;
+}
+
+#simple-markdown #editor {
+  background-color: var(--editor-bg-color) !important;
+  color: var(--editor-text-color) !important;
+}
+
+#simple-markdown #column-resizer {
+  background-color: var(--border-color) !important;
+}
+
+/* Plus Editor */
+#plus-editor .note-editor.note-frame.fullscreen .note-editable {
+  background-color: var(--editor-bg-color) !important;
+  color: var(--editor-text-color) !important;
+}
+
+#plus-editor .panel-default > .panel-heading {
+  background-color: var(--editor-bg-color) !important;
+}
+
+#plus-editor .btn-default {
+  color: var(--ui-component-text-color) !important;
+  background-color: var(--ui-component-bg-color) !important;
+  border-color: var(--highlight-color) !important;
+}
+
+#plus-editor .panel-heading {
+  border-color: var(--border-color) !important;
+}
+
+#plus-editor .dropdown-menu > li > a {
+  color: var(--editor-text-color);
+}
+
+.component-stack-border {
+  border-color: var(--border-color) !important;
+}
+
+/*SN Components */
+:root {
+  --body-text-color: var(--editor-text-color);
+  --body-background-color: var(--high-contrast-bg-color);
+  --element-text-color: var(--ui-component-text-color);
+  --element-background-color: var(--ui-component-bg-color);
+  --tint-color: var(--highlight-color);
+}
+
+.sn-component .element-background-color {
+  background-color: var(--element-background-color);
+}
+
+.sn-component .body-background-color {
+  background-color: var(--body-background-color);
+}
+
+.sn-component .element-text-color {
+  color: var(--element-text-color);
+}
+
+.sn-component .body-text-color {
+  color: var(--body-text-color);
+}
+
+/*# sourceMappingURL=dist.css.map */
