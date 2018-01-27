@@ -88,6 +88,11 @@ body {
 
 .app-bar {
   background-color: var(--ui-component-bg-color) !important;
+  border-color: var(--border-color) !important;
+
+  .item.border {
+    border-color: var(--border-color) !important;
+  }
 }
 
 .blue { /*legacy, replaced with .tinted */
@@ -196,13 +201,6 @@ body {
 
 #editor-title-bar #save-status {
   color: #8C8F91 !important;
-}
-
-/* Footer */
-
-#footer-bar {
-  border-top: 1px solid var(--footer-bar-border-top-color) !important;
-  background-color: var(--footer-bg-color) !important;
 }
 
 /* Editors */
@@ -331,4 +329,8 @@ body {
 
 .sn-component .body-text-color {
  color: var(--body-text-color);
+}
+
+.sn-component .border-color {
+  border-color: var(--border-color) !important;
 }
