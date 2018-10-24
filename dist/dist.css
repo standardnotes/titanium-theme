@@ -290,6 +290,10 @@ body {
   color: var(--editor-text-color);
 }
 
+#plus-editor .table-bordered td {
+  border-color: var(--note-cell-border-color);
+}
+
 .component-stack-border {
   border-color: var(--border-color) !important;
 }
