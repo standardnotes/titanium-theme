@@ -255,6 +255,31 @@ body {
   color: var(--editor-text-color) !important;
 }
 
+.editor-toolbar a.active, .editor-toolbar a:hover {
+  border-color: transparent;
+  background: var(--border-color);
+}
+
+.editor-toolbar.disabled-for-preview a:not(.no-disable) {
+  background: inherit;
+}
+
+.editor-preview-active, .editor-preview-active-side {
+  background-color: var(--editor-bg-color) !important;
+  border: 0 !important;
+  border-left: 1px solid var(--border-color) !important;
+  color: var(--editor-text-color) !important;
+}
+
+#sn-advanced-markdown-editor .editor-toolbar i.separator {
+  border-right-color: var(--border-color);
+}
+
+#sn-advanced-markdown-editor .editor-preview.editor-preview-active pre, #sn-advanced-markdown-editor .editor-preview-side.editor-preview-active-side pre {
+  background-color: var(--border-color);
+  padding: 20px;
+}
+
 /* Simple Markdown Editor */
 #simple-markdown {
   background-color: var(--editor-bg-color) !important;
