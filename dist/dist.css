@@ -44,6 +44,11 @@
   --bar-bg-color: var(--background-color);
   --link-color: var(--background-color);
   --selection-color: var(--border-color);
+  --sn-component-background-color: var(--note-cell-selected-bg-color);
+  --sn-component-foreground-color: var(--foreground-color);
+  --sn-component-foreground-highlight-color: var(--background-color);
+  --sn-component-outer-border-color: transparent;
+  --sn-component-inner-border-color: var(--foreground-color);
   --sn-desktop-titlebar-bg-color: var(--high-contrast-bg-color);
   --sn-desktop-titlebar-border-color: var(--highlight-color);
   --sn-desktop-titlebar-ui-color: var(--foreground-color);
