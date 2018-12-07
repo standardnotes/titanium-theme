@@ -60,11 +60,23 @@
 
   --selection-color: var(--border-color);
 
-  --sn-component-background-color: var(--note-cell-selected-bg-color);
-  --sn-component-foreground-color: var(--foreground-color);
-  --sn-component-foreground-highlight-color: var(--background-color);
-  --sn-component-outer-border-color: transparent;
-  --sn-component-inner-border-color: var(--foreground-color);
+  // StyleKit Vars
+  --sn-stylekit-shadow-color: var(--highlight-color);
+
+  --sn-stylekit-info-color: var(--background-color);
+  --sn-stylekit-info-contrast-color: #e6e6e6;
+
+  --sn-stylekit-background-color: var(--ui-component-bg-color);
+  --sn-stylekit-foreground-color: var(--foreground-color);
+  --sn-stylekit-border-color: var(--border-color); // For borders inside background-color
+
+  --sn-stylekit-contrast-background-color: var(--highlight-color);
+  --sn-stylekit-contrast-foreground-color: black;
+  --sn-stylekit-contrast-border-color: #acacac; // For borders inside contrast-background-color
+
+  --sn-stylekit-paragraph-text-color: var(--ui-text-color);
+
+  --sn-stylekit-scrollbar-track-border-color: var(--border-color);
 
   --sn-desktop-titlebar-bg-color: var(--high-contrast-bg-color);
   --sn-desktop-titlebar-border-color: var(--highlight-color);
