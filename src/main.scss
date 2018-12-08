@@ -123,24 +123,6 @@
   padding: 20px;
 }
 
-/* Simple Markdown Editor */
-
-#simple-markdown {
-  background-color: var(--editor-bg-color) !important;
-  color: var(--editor-text-color) !important;
-}
-
-#simple-markdown #editor {
-  background-color: var(--editor-bg-color) !important;
-  color: var(--editor-text-color) !important;
-}
-
-#simple-markdown #column-resizer {
-  background-color: var(--border-color)  !important;
-}
-
-
-
 /* Plus Editor */
 
 #plus-editor .note-editor.note-frame.fullscreen .note-editable {
